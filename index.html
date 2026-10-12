@@ -80,6 +80,7 @@ section{display:flex;flex-direction:column;gap:20px}
 #map .reg:hover{opacity:1}
 #map .reg:focus-visible{outline:none;opacity:1;stroke:var(--ink)}
 #map .edge{fill:none;stroke:var(--ink);stroke-width:3.5;stroke-linejoin:round;pointer-events:none}
+#map .cname{text-transform:uppercase;letter-spacing:.06em}
 #map .cline.strong{stroke-opacity:.8;stroke-width:2.2}
 #map .cline{fill:none;stroke:var(--ink);stroke-opacity:.45;stroke-width:1.2;pointer-events:none}
 #map .place{font-family:var(--display);font-weight:700;font-stretch:80%;fill:var(--ink);text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:var(--surface);stroke-width:4;stroke-linejoin:round}
@@ -133,8 +134,8 @@ td.r,th.r{text-align:right}
 <div class="wrap">
   <div class="head">
     <div class="eyebrow">California · General election Tuesday, Nov. 3, 2026</div>
-    <h1>CA-45 and the state legislative districts inside it</h1>
-    <p class="lede">The 45th Congressional District was redrawn by Proposition 50. It now runs from Norwalk and Cerritos through Little Saigon to Fountain Valley, and it crosses five State Senate districts, three of them on this November's ballot, and six State Assembly districts, all of them on the ballot. Seventeen cities sit wholly or partly inside it.</p>
+    <h1>CA-45</h1>
+    <p class="lede">Re-elect Congressman Derek Tran and take back the country.</p>
     <div class="facts">
       <span><b>760,068</b> residents (2020 Census)</span>
       <span><b>79%</b> Orange County · <b>21%</b> Los Angeles County</span>
@@ -214,10 +215,10 @@ td.r,th.r{text-align:right}
 
   <section>
     <h2>On the ballot: mayors and city councils</h2>
-    <p class="muted">City offices are nonpartisan. Twelve of the cities inside CA-45 have council or mayor races on Nov. 3; four elect a mayor directly. In cities only partly inside CA-45, each council race is marked by whether its district is inside. The contested council districts in Placentia and Seal Beach, all three contested Santa Ana wards, Fullerton District 5 and Stanton District 1 turn out to lie outside CA-45. Cities are ordered by how many CA-45 residents they hold.</p>
+    <p class="muted">City offices are nonpartisan. Fifteen of the 17 cities inside CA-45 have council or mayor races on Nov. 3; only Cerritos and Lakewood do not. Four elect a mayor directly. In cities only partly inside CA-45, each council race is marked by whether its district is inside. The contested council districts in Placentia and Seal Beach, all three contested Santa Ana wards, Fullerton District 5 and Stanton District 1 turn out to lie outside CA-45. Cities are ordered by how many CA-45 residents they hold.</p>
     <div class="chips" id="citychips"></div>
     <div class="cities" id="cities"></div>
-    <p class="muted">Midway City is unincorporated and has no city council. Council districts are on the map for the Orange County cities. Norwalk, Artesia, Cerritos, Hawaiian Gardens and Fountain Valley elect their councils citywide. Lakewood votes by district, but I have no file for its lines.</p>
+    <p class="muted">Midway City is unincorporated and has no city council. Council districts are on the map for the Orange County cities. Norwalk, Artesia, Cerritos, Hawaiian Gardens and Fountain Valley elect their councils citywide. Lakewood votes by district, but its district lines are not shown here.</p>
   </section>
 
   <section>
@@ -239,7 +240,7 @@ td.r,th.r{text-align:right}
         <li><a href="https://elections.cdn.sos.ca.gov/statewide-elections/2026-general/cert-list-candidates.pdf">Certified list of candidates, Nov. 3, 2026, Secretary of State</a></li>
         <li><a href="https://en.wikipedia.org/wiki/2026_California_State_Senate_election">2026 California State Senate election, primary results</a></li>
         <li><a href="https://sd34.senate.ca.gov/district">Senate District 34 city shares</a> · <a href="https://sr36.senate.ca.gov/issue/district-map">Senate District 36 cities</a> · <a href="https://ceo.lacounty.gov/wp-content/uploads/2024/05/STATE-SENATE-Updated-on-5-22-2024.pdf">LA County Senate delegation list</a></li>
-        <li>City candidates: city clerk pages linked on each card, plus <a href="https://crpa.org/wp-content/uploads/2026/10/CRPA-2026-VOTING-GUIDEGeneral-Orange-County1.8.pdf">a countywide Orange County candidate roster</a>, <a href="https://orangecountytribune.com/2026/08/07/campaign-2026-to-start/">Orange County Tribune</a>, <a href="https://fullertonobserver.com/2026/09/26/league-of-women-voters-forum-for-district-3-and-5-fullerton-city-council-cadidates/">Fullerton Observer</a>, <a href="https://www.loscerritosnews.net/2026/08/17/la-palma-certifies-four-candidates-for-november-city-council-election">Los Cerritos News</a> and <a href="https://eyesoncypressca.substack.com/p/and-the-city-council-candidates-are">Eyes on Cypress</a></li>
+        <li>City candidates: city clerk pages linked on each card, including <a href="https://cms3.revize.com/revize/norwalkca/Documents/Departments%20&%20Services/City%20Clerk/Elections/Candidate%20List%20-%20public.pdf">Norwalk's qualified candidate list</a>, plus <a href="https://crpa.org/wp-content/uploads/2026/10/CRPA-2026-VOTING-GUIDEGeneral-Orange-County1.8.pdf">a countywide Orange County candidate roster</a>, <a href="https://orangecountytribune.com/2026/08/07/campaign-2026-to-start/">Orange County Tribune</a>, <a href="https://fullertonobserver.com/2026/09/26/league-of-women-voters-forum-for-district-3-and-5-fullerton-city-council-cadidates/">Fullerton Observer</a>, <a href="https://www.loscerritosnews.net/2026/08/17/la-palma-certifies-four-candidates-for-november-city-council-election">Los Cerritos News</a> and <a href="https://eyesoncypressca.substack.com/p/and-the-city-council-candidates-are">Eyes on Cypress</a></li>
         <li>Boundary files: AB 604 congressional districts and CA State Senate Districts and Membership 2025-2030, the 2021 Citizens Redistricting Commission final Assembly districts, California City Boundaries and Identifiers, and Orange County City Subdistrict shapefiles</li>
         <li><a href="https://www.cookpolitical.com/house/race/482041">Cook Political Report, CA-45</a></li>
       </ul>
@@ -304,7 +305,8 @@ const CITY = [
  ["Fountain Valley",100,"",[
    ["City Council, at large","",[["Glenn Grandis","",1],["Ted Bui","",1],["Rudy Huebner",""],["Katy Wright",""]]]],
    "https://www.fountainvalley.gov/1262/November-3-2026---General-Municipal-Elec"],
- ["Norwalk",53.4,"Two citywide council seats are on the ballot and the city reports six qualified candidates. I could not retrieve their names.",[],
+ ["Norwalk",53.4,"",[
+   ["City Council, at large","Vote for two",[["Tony Ayala","",1],["Rachell Jaimes",""],["Richard LeGaspi",""],["Daniel Moreno",""],["Leonard Shryock",""],["Nikolas Woods",""]]]],
    "https://norwalkca.gov/departments_services/city_clerk/elections.php"],
  ["Cypress",100,"",[
    ["Council District 1","",[["David Burke","",1],["Anne Hertz-Mallari","Council member 2020 to 2024"]]],
@@ -321,17 +323,18 @@ const CITY = [
    "https://santa-ana.gov/2026-city-council-elections/"],
  ["Lakewood",26.2,"No city election in November. Lakewood elected Council Districts 1, 2 and 5 on June 2, 2026.",[],
    "https://www.lakewoodca.gov/Government/Elections/2026-City-Council-Election"],
- ["Artesia",100,"A council election is on the Nov. 3 ballot, but I could not retrieve the official list. Melissa Ramoso, Ali Taj and Dan Rocha are named as candidates in endorsement guides; there may be others.",[],
+ ["Artesia",100,"Three seats are up, held by Rene Trevino, Melissa Ramoso and Ali Taj. The names shown come from campaign sites and endorsement guides; the official list is on the city election page and may include others.",[
+   ["City Council, at large","Partial list",[["Melissa Ramoso","Mayor Pro Tem",1],["Ali Taj","Council Member",1],["Dan Rocha",""]]]],
    "https://cityofartesia.us/1618/2026-Election-Information"],
  ["La Palma",100,"",[
    ["Council District 2","",[["Nitesh P. Patel","",1],["Andrew Kim",""]]],
    ["Council District 4","",[["Mary Paningsoro",""],["Jonathan Dinwiddie",""]]]],
    "https://www.lapalmaca.gov/103/Elections"],
- ["Placentia",28.7,"A citywide City Clerk seat is also on the ballot; I did not find its candidates.",[
+ ["Placentia",28.7,"A citywide City Clerk seat is also on the ballot; its candidates are on the city election page.",[
    ["Council District 2","",[["Matt Waugh",""],["Santosh Sabnis",""],["Julie Suchard",""]]],
    ["Council District 4","",[["Chad Wanke","",1],["James Burandt",""]]]],
    "https://placentia.org/1170/November-3-2026-General-Municipal-Electi"],
- ["Hawaiian Gardens",100,"A council election is on the Nov. 3 ballot. I could not retrieve the candidate list.",[],
+ ["Hawaiian Gardens",100,"A council election is on the Nov. 3 ballot. The candidate list is on the city election page.",[],
    "https://www.hgcity.org/government/departments/city-clerk/candidates-2020-elections"],
  ["Stanton",34.8,"",[
    ["Mayor","Only candidate reported at the close of filing",[["David Shawver","",1]]],
@@ -397,6 +400,8 @@ function draw(){
     if(isCD && !ATLARGE.includes(c)) return;
     el("text",{x:c==="Cerritos"&&!isCD?x+35:x,y:c==="Cerritos"&&!isCD?y+48:y+7,class:"place","font-size":g.km2<9?18:24}).textContent = c; });
   if(isCD) Object.keys(GEO.sub).forEach(k=>{ const g=GEO.sub[k]; el("text",{x:g.pt[0],y:g.pt[1]+6,class:"place","font-size":g.share<0.6?13:18}).textContent = k.split(" ").pop(); });
+  if(isCD) CNAMES.filter(hasSub).forEach(n=>{ const ps=Object.keys(GEO.sub).filter(k=>k.startsWith(n+" Council")).map(k=>GEO.sub[k].pt);
+    el("text",{x:ps.reduce((t,q)=>t+q[0],0)/ps.length,y:Math.min(...ps.map(q=>q[1]))-18,class:"place cname","font-size":14}).textContent = n; });
   mapchips.hidden = isCD;
   mapchips.innerHTML = isCD ? "" : L.order.map(k=>`<button class="chip" type="button" data-k="${k}" style="--k:var(--${L.color[k]})"><i class="sw"></i>${L.short?L.short+" ":""}${k}</button>`).join("");
   keyEl.innerHTML = isCD ? [["c36","Council seat on the Nov. 3 ballot"],["c34","Citywide council election"],["unk","Not on the ballot this year"]]
